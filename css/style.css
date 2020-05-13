@@ -1,0 +1,628 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family:Open Sans;
+}
+html{
+	font-size:10;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+Fonts--->
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Dosis', sans-serif;
+
+
+
+Custom styles:
+--------------------------------------->>>>
+*/
+
+body {
+	background-color:#;
+}
+
+h2.copyright {
+	font-family: 'Playfair Display', serif;
+	font-size:.7em;
+	color:black;
+}
+
+p.subTitle {
+	padding-bottom:15px;
+}
+
+a:visited {
+	color:black;
+}
+a:link {
+	color:black;
+}
+a:hover {
+	color: gray;
+}
+
+.containerIndex {
+	width:100%;
+	height:100%;
+}
+
+.containerImage {
+	display:flex;
+}
+
+.emptyIndex1 {
+	flex-grow:<1>;
+	width:30%;
+	order:<1>;
+}
+
+div.indexImage {
+	flex-grow:<3>;
+	width:40%;
+    order:<2>;
+}
+
+.emptyIndex2 {
+	flex-grow:<1>;
+	width:30%;
+	order:<3>;
+}
+
+img{
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    border-style:none;
+}
+
+img.indexImage {
+	width:100%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    opacity:1;
+}
+
+img.logo1 {
+	width: 400px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding-top:0%;
+    padding-bottom:0%;
+    opacity:1;
+}
+
+img.logo2 {
+	width:60%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding-top:0%;
+    padding-bottom:0%;
+    opacity:1;
+}
+
+img.projects {
+	width: 400px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding-top:0%;
+    padding-bottom:0%;
+    opacity:1;
+}
+
+img.current {
+	width:400px;
+	float:right;
+	padding-top:10%;
+	padding-right:10%;
+	display:none;
+}
+
+img.exhibitionImages {
+	width:100%;
+	max-width:600px;
+	float:right;
+	padding-top:10%;
+	padding-right:;
+}
+
+img.drawingClass {
+	width:40%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding-top:0%;
+    padding-bottom:0%;
+    opacity:1;
+}
+
+img.skillers {
+	width:10%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding-top:0%;
+    padding-bottom:0%;
+    opacity:1;
+}
+
+.unHide{
+	display:block;
+	transition:0.2s;
+}
+
+.address {
+  	width:100%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding-top:20px;
+    padding-bottom:0%;
+    opacity:1;
+    padding-bottom:20px;
+	text-align:center;
+	font-family: 'Playfair Display', serif;
+	font-size:smaller;
+	text-size-adjust: auto;
+}
+
+a.address1 {
+	text-align:center;
+	font-family: 'Playfair Display', serif;
+	text-size-adjust: auto;
+}
+
+.addressContents {
+  	position: fixed;
+  	bottom: 0;
+  	width:100%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding-top:20px;
+    padding-bottom:0%;
+    opacity:1;
+    padding-bottom:20px;
+	text-align:center;
+	font-family: 'Playfair Display', serif;
+	font-size:smaller;
+	text-size-adjust: auto;
+}
+
+.addressContentsEx {
+  	position:fixed;
+  	bottom: 0;
+  	width:100%;
+	display: block;
+    margin-left: 150px;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding-top:20px;
+    padding-bottom:0%;
+    opacity:1;
+    padding-bottom:20px;
+	text-align:left;
+	font-family: 'Playfair Display', serif;
+	font-size:smaller;
+	text-size-adjust: auto;
+}
+.addressContentsE {
+  	position:;
+  	bottom: 0;
+  	width:;
+	display: block;
+    margin-left:16%;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding-top:20px;
+    padding-bottom:0%;
+    opacity:1;
+    padding-bottom:20px;
+	text-align:left;
+	font-family: 'Playfair Display', serif;
+	font-size:smaller;
+	text-size-adjust: auto;
+}
+
+
+.containerContents {
+	display: flex;
+	justify-content:space-evenly;
+	font-family: 'Playfair Display', serif;
+	font-size:1.2em;
+	text-size-adjust: auto;
+	padding-left:50px;
+}
+
+.subContents {
+	display: flex;
+	justify-content:space-evenly;
+}
+
+.subContentsLeft {
+	width:100%;
+}
+
+.subContentsRight {
+	max-width:80%;
+	padding-left:100px;
+}
+
+.Title {
+	display: flex;
+	justify-content:space-left;
+	font-family: 'Playfair Display', serif;
+	font-size:1.4em;
+	text-size-adjust: auto;
+	padding-left:200px;
+	padding-bottom:10px;
+	word-spacing:1.5px;
+
+}
+
+.exhibitionText {
+}
+
+.exhibitionDetails {
+	font-family: 'Playfair Display', serif;
+	font-size:1em;
+	text-size-adjust: auto;
+	padding-left:20%;
+	padding-bottom:10px;
+}
+.showDates {
+	font-family: 'Playfair Display', serif;
+	font-size:.8em;
+	text-size-adjust: auto;
+	padding-left:23%;
+	padding-right:;
+	padding-bottom:20px;
+	letter-spacing: 1px;
+	word-spacing:1px;
+	line-height:18px;
+}
+
+.catalogue {
+	font-family: 'Playfair Display', serif;
+	font-size:.8em;
+	text-size-adjust: auto;
+	padding-left:23%;
+	padding-right:;
+	padding-bottom:10px;
+}
+
+.TitleSub {
+	display: flex;
+	justify-content:space-left;
+	font-family: 'Playfair Display', serif;
+	font-size:1.2em;
+	text-size-adjust: auto;
+	padding-left:200px;
+	flex-direction: column;
+	word-spacing:1.5px;
+}
+
+.TitleInfo {
+	display: flex;
+	justify-content:space-left;
+	font-family: 'Playfair Display', serif;
+	font-size:.8em;
+	text-size-adjust: auto;
+	padding-left:px;
+	flex-direction: column;
+	width:80%;
+	word-spacing:1.5px;
+	line-height:18px;
+}
+
+.memphis-gardensPg2 {
+	justify-content:space-evenly;	
+	display:flex;
+}
+
+.MIDspacerContents {
+	border-left: 1px gray;
+    height: 90%;
+}
+
+.memphis-gardens {
+	flex-direction: column;
+}
+
+.spaceLeftContents {
+	justify-content:flex-start;	
+	display:flex;
+
+}
+
+.spaceRightContents {
+	justify-content:flex-start;	
+	display:flex;
+
+}
+
+.memphis-gardensDivider {
+	border: 1px gray;
+	width:100%;
+	flex-direction: column;
+}
+
+.gardensContents1 {
+	flex-grow:<3>;
+}
+
+.projectsContents2 {
+	flex-grow:<3>;	
+}
+
+.spaceLeft0 {
+	width:30%;
+}
+
+
+/*///////-----------------------
+
+a.studios:hover {
+	background-image:url("../img/studio.jpg");
+	height:100%;
+	opacity:0.6%;
+	transition:0.6s;
+}
+
+-------------------/////////*/
+
+img.studioGIF {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    padding-top:30px;
+    padding-right:10%;
+}
+
+.sss {
+	height: 0;
+	margin: 0; 
+	padding: 0;
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+
+.ssslide {
+	width: 50%;
+	margin: 0;
+	margin-left: auto;
+    margin-right: auto;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	overflow: hidden;
+}
+
+.ssslide img {
+	max-width: 50%;
+	height: auto;
+	margin: 0;
+	margin-left: auto;
+    margin-right: auto;
+	padding: 0;
+	position: relative;
+	display: block;
+}
+
+.sssnext, .sssprev {
+	width: 25px;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	background: url('images/arr.png') no-repeat;
+}
+
+.sssprev {
+	left: 3%;
+	background-position: 0 50%;
+}
+
+.sssnext {
+	right: 3%;
+	background-position: -26px 50%;
+}
+
+.sssprev:hover, .sssnext:hover {
+	cursor: pointer;
+}
+
+.studioSlides {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+}
+
+
+/*///////------------------------------------------/////////*/
+
+.everypage{
+	position:fixed;
+	overflow:hidden;
+}
+
+.leftBar{
+	height:100%;
+	width:50px;
+	position:fixed;
+	overflow:hidden;
+	margin:0;
+	background-color:#;
+	transition:0.8s;
+	z-index:3;
+}
+
+.click{
+	height:100%;
+	width:300px;
+	position:fixed;
+	overflow:hidden;
+	margin:0;
+	background-color:#ccc;
+	transition:0.8s;
+}
+
+.menuList{
+	margin-top:20px;
+	display:none;
+	transition-delay:0.8s
+}
+
+.menuBorder {
+	border-width:thin;
+	border:1px dashed gray;
+}
+
+.hide{
+	display:none;
+}
+
+.unhide{
+	display:block;
+	transition:0.8s;
+}
+
+.unhide1{
+	display:block;
+	transition:2s;
+}
+
+.media{
+	height:30px;
+	position: fixed;
+  	bottom:0;
+	margin-left:100px;
+	margin-bottom:10px;
+	display:flex;
+	flex-direction:row;
+	transition-delay:2s;
+}
+
+.facebook{
+	background-image:url("../images/bw-facebook.png");
+	height:30px;
+	width:30px;
+	background-position:center center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin-right:8px;
+	display:none;
+	transition:2s;
+}
+.instagram{
+	background-image:url("../images/instagram-icon.png");
+	height:30px;
+	width:30px;
+	background-position:center center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin-right:8px;
+	display:none;
+	transition:2s;
+}
+
+.copyright{
+	color:#ffffff;
+	position: fixed;
+  	bottom: 0;
+	margin-left:8px;
+	margin-bottom:10px;
+	opacity:0;
+	transition:;
+}
+
+.copyright:hover{
+	color:#ffffff;
+	position: fixed;
+  	bottom: 0;
+	margin-left:8px;
+	margin-bottom:10px;
+	opacity:1;
+	transition:2s;
+}
+
+p.listMenu {
+	font-family: 'Playfair Display', serif;
+	font-size:1.2em;
+	color:black;
+	margin-left:20px;
+}
+
